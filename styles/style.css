@@ -1,0 +1,291 @@
+@import url(./null.css);
+
+body {
+    color: #fff;
+    font: 28px "Inter", sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: url("../image/Red.png") 0 / cover no-repeat #a60000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 35px;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    margin-left: 60px;
+}
+
+h1 {
+    font: 1.2em "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 35px;
+    width: 40%;
+    background: rgba(166, 0, 0, 0.65);
+    box-shadow: -5px -5px 30px #c10000, 5px 5px 30px #810000;
+    backdrop-filter: blur(15px);
+    border-radius: 40px;
+    margin-bottom: 50px;
+}
+
+.main__header {
+    font: 1em "Ubuntu", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    margin: 30px 0;
+    background: rgba(132, 0, 0, 0.8);
+    box-shadow: inset 0px 0px 80px #750000;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+form > img {
+    width: 70px;
+}
+p {
+    font: 0.8em "Inter", sans-serif;
+    text-align: center;
+}
+
+form :where(img, p) {
+    opacity: 0.7;
+}
+
+section .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d25b5b;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.main__progress-area .row .content {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.file {
+    width: 35px;
+}
+
+.arrow {
+    width: 30px;
+}
+
+.progress__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section span {
+    font-size: 0.6em;
+}
+
+.main__uploaded-area .uploaded__row .uploaded__content {
+    display: flex;
+    align-items: center;
+}
+
+.main__uploaded-area .uploaded__row .uploaded__details {
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+
+.details__size {
+    font-size: 0.45em;
+    color: rgb(235, 235, 235);
+}
+
+.progress-bar {
+    margin-top: 10px;
+    height: 6px;
+    width: 100%;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.progress {
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    background: #840000;
+}
+
+.main__progress-area {
+    /* display: none; */
+}
+
+.main__uploaded-area {
+    /* display: none; */
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer__glass {
+    font: 0.65em "Ubuntu Mono", sans-serif;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .header {
+        font: 1em "Ubuntu", sans-serif;
+    }
+
+    .main__header {
+        width: 480px;
+        height: 35px;
+    }
+
+    .main__form {
+        width: 550px;
+        height: 415px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        text-align: center;
+        font: 1.2em "Ubuntu Mono", sans-serif;
+    }
+
+    .main__header {
+        width: 380px;
+        height: 35px;
+    }
+
+    .main__form {
+        width: 450px;
+        height: 350px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+    .main__header {
+    }
+
+    .header {
+        font: 1.2em "Ubuntu Mono", sans-serif;
+        text-align: center;
+    }
+
+    .main__header {
+        width: 280px;
+        height: 32px;
+    }
+
+    .main__form {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 415px) {
+    .header {
+        font: 1.1em "Ubuntu Mono", sans-serif;
+        text-align: center;
+    }
+
+    .main__header {
+        width: 230px;
+        height: 50px;
+    }
+
+    .main__form {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 416px) and (max-width: 650px) {
+    .header {
+        font: 1.1em "Ubuntu Mono", sans-serif;
+        text-align: center;
+    }
+
+    .main__header {
+        width: 230px;
+        height: 50px;
+    }
+
+    .main__form {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .main__header {
+        width: 480px;
+        height: 35px;
+    }
+
+    .main__form {
+        width: 550px;
+        height: 415px;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 3000px) {
+    .main__form {
+        width: 650px;
+        height: 415px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 374px) {
+    .header {
+        font: 1em "Ubuntu Mono", sans-serif;
+        text-align: center;
+    }
+
+    .main__header {
+        width: 130px;
+    }
+    .main__form {
+        width: 200px;
+        height: 300px;
+    }
+}

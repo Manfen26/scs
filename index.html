@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="SkinCancerStop - веб-приложение, позволяющее предположить наличие злокачественного новообразования кожи.">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="shortcut icon" href="./image/logo.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Ubuntu+Mono&family=Ubuntu:wght@400&display=swap"
+    rel="stylesheet" />
+  <title>SkinCancerStop</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <header class="header">
+        <h1>SkinCancer<span class="bold">Stop</span></h1>
+      </header>
+      <main class="main">
+        <div class="main__form">
+          <header class="main__header">Upload your files</header>
+          <form action="POST" enctype="multipart/form-data">
+            <input class="input" type="file" name="file" hidden />
+            <img src="./image/upload.svg" alt="Upload" />
+            <p>Browse File to Upload</p>
+          </form>
+          <section class="main__progress-area"></section>
+          <section class="main__uploaded-area"></section>
+          <section class="main__result-area">
+            <span class="main__result-data"></span>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__glass">
+          <span>2021</span><span> &#169;</span><span> SkinCancerStop</span><span> &#8226;</span><span> Обратная
+            cвязь</span>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
